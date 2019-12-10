@@ -3,9 +3,13 @@
 #content{position: relative;width: 1400px;margin: 0 auto;}
 
 
-.rental_bg{position: relative;width: 100%;height: 494px;background: url("../images/rental/top_bg.jpg") no-repeat fixed;background-size: cover;}
-
-
-
 
 #rentalTab{width: 1360px;margin: 50px auto;}
+#rentalTab .tablist{height: 45px;margin-bottom: 25px;}
+#rentalTab .tablist li{float: left;width: 20%;height: 45px;line-height: 43px;border: 0px solid #000;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;text-align: center;}
+
+#rentalTab .tablist li:hover, #rentalTab .tablist li:focus, #rentalTab .tablist li.active{color: #ffb400;cursor: pointer;}
+#rentalTab .tablist li.active{border-left: 5px solid #ffb400;border-right: 5px solid #ffb400;}
+
+#rentalTab .tabpanel{display: none;}
+#rentalTab .tabpanel.active{display: block;}

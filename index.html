@@ -50,20 +50,50 @@
       var $photo = $('#photo');
 
       $btnEle.find('.btn1').on('click', function () {
-          var pTxt = $(this).text();
-          /* var photoSrc = [[],[]];
-          console.log(photoSrc); ???? */
-          $photo.find('.blind').text(pTxt).next().attr({src: 'images/main/culture_01_1.jpg', alt: '안상수 한글전시작품'}).next().attr({src: 'images/main/culture_02_1.jpg', alt: '날개.파티전 포스터 작품'}).next().attr({src: 'images/main/culture_03_1.jpg', alt: '전시작품 감상하는 사람 뒷모습'});
+        var pTxt = $(this).text();
+        /* var photoSrc = [[],[]];
+        console.log(photoSrc); ???? */
+        $photo.find('.blind').text(pTxt).next().attr({
+          src: 'images/main/culture_01_1.jpg',
+          alt: '안상수 한글전시작품'
+        }).next().attr({
+          src: 'images/main/culture_02_1.jpg',
+          alt: '날개.파티전 포스터 작품'
+        }).next().attr({
+          src: 'images/main/culture_03_1.jpg',
+          alt: '전시작품 감상하는 사람 뒷모습'
+        });
+        $(this).parent().addClass("on").siblings().removeClass("on");
       });
       $btnEle.find('.btn2').on('click', function () {
-          var pTxt = $(this).text();
-          console.log(pTxt);
-          $photo.find('.blind').text(pTxt).next().attr({src: 'images/main/culture_01_2.jpg', alt: '최현우의 빌리브'}).next().attr({src: 'images/main/culture_02_2.jpg', alt: '판타지아에무 포스터'}).next().attr({src: 'images/main/culture_03_2.jpg', alt: '뮤지컬 아이다'});
+        var pTxt = $(this).text();
+        console.log(pTxt);
+        $photo.find('.blind').text(pTxt).next().attr({
+          src: 'images/main/culture_01_2.jpg',
+          alt: '최현우의 빌리브'
+        }).next().attr({
+          src: 'images/main/culture_02_2.jpg',
+          alt: '판타지아에무 포스터'
+        }).next().attr({
+          src: 'images/main/culture_03_2.jpg',
+          alt: '뮤지컬 아이다'
+        });
+        $(this).parent().addClass("on").siblings().removeClass("on");
       });
       $btnEle.find('.btn3').on('click', function () {
-          var pTxt = $(this).text();
-          console.log(pTxt);
-          $photo.find('.blind').text(pTxt).next().attr({src: 'images/main/culture_01_3.jpg', alt: '독립영화여성감독전'}).next().attr({src: 'images/main/culture_02_3.jpg', alt: '기억할 만한 지나침'}).next().attr({src: 'images/main/culture_03_3.jpg', alt: '앵커'});
+        var pTxt = $(this).text();
+        console.log(pTxt);
+        $photo.find('.blind').text(pTxt).next().attr({
+          src: 'images/main/culture_01_3.jpg',
+          alt: '독립영화여성감독전'
+        }).next().attr({
+          src: 'images/main/culture_02_3.jpg',
+          alt: '기억할 만한 지나침'
+        }).next().attr({
+          src: 'images/main/culture_03_3.jpg',
+          alt: '앵커'
+        });
+        $(this).parent().addClass("on").siblings().removeClass("on");
       });
     });
   </script>
@@ -142,31 +172,31 @@
   <!-- 본문 -->
   <div id="fullpage">
     <section class="section" id="cnt1">
-        <video id="videobg" autoplay loop muted poster="images/main/제목-없음-1.jpg" width="100%" height="930px">
-        <source src="media/제3회 한글실험프로젝트 '한글디자인_ 형태의 전환'_ 지금, 여기, 우리의 한글.mp4" type="video/mp4">
-    </video>
+      <video id="videobg" autoplay loop muted poster="images/main/제목-없음-1.jpg" width="100%" height="930px">
+        <source src="media/index.mp4" type="video/mp4">
+      </video>
     </section>
 
     <section class="section p_r" id="cnt2">
-        <div class="sub_tit p_a">
-            <h2 class="p_a">Culture Life</h2>
-            <strong class="p_a">HeumAra</strong>
-        </div>
-        <div class="txt p_a">
-            <p>다양한 문화생활의 중심<br>생각의 바다, 헤움아라</p>
-            <a href="sub/culture.html">문화<span class="link_arrow"></span></a>
-            <ul id="btn">
-                <li><button type="button" class="btn1">EXHIBITION<span></span></button></li>
-                <li><button type="button" class="btn2">PERFORMANCE<span></span></button></li>
-                <li><button type="button" class="btn3">MOVIE<span></span></button></li>
-            </ul>
-        </div>
-        <div id="photo" class="p_a">
-            <h3 class="blind">EXHIBITION</h3>
-            <img class="p_a" src="images/main/culture_01_1.jpg" alt="안상수 한글전시작품">
-            <img class="p_a" src="images/main/culture_02_1.jpg" alt="날개.파티전 포스터 작품">
-            <img class="p_a" src="images/main/culture_03_1.jpg" alt="전시작품 감상하는 사람 뒷모습">
-        </div>
+      <div class="sub_tit p_a">
+        <h2 class="p_a">Culture Life</h2>
+        <strong class="p_a">HeumAra</strong>
+      </div>
+      <div class="txt p_a">
+        <p>다양한 문화생활의 중심<br>생각의 바다, 헤움아라</p>
+        <a href="sub/culture.html">문화<span class="link_arrow"></span></a>
+        <ul id="btn">
+          <li><button type="button" class="btn1 first">EXHIBITION<span></span></button></li>
+          <li><button type="button" class="btn2">PERFORMANCE<span></span></button></li>
+          <li><button type="button" class="btn3 last">MOVIE<span></span></button></li>
+        </ul>
+      </div>
+      <div id="photo" class="p_a">
+        <h3 class="blind">EXHIBITION</h3>
+        <img class="p_a" src="images/main/culture_01_1.jpg" alt="안상수 한글전시작품">
+        <img class="p_a" src="images/main/culture_02_1.jpg" alt="날개.파티전 포스터 작품">
+        <img class="p_a" src="images/main/culture_03_1.jpg" alt="전시작품 감상하는 사람 뒷모습">
+      </div>
     </section>
 
     <section class="section" id="cnt3">
@@ -242,12 +272,12 @@
 
     <section class="section" id="cnt4">
       <h2>Event For You</h2>
-      <strong>Heumara</strong>
-      <p id="subtit">이달의 전시회</p>
+      <strong>HeumAra</strong>
+      <p id="subtit">놀라운 PROMOTION</p>
       <ul id="txtbox">
         <li>연간 평균 방문 손님 10만명의헤움아라의<br>특별한 세계에 여러분을 초대합니다.</li>
-        <li>전시, 공연, 프로그램을 합리적인 가격과<br>최고의 퀄리티로 만나볼 수 있는 <br>저희 헤움아라는 이번에는 특별하게</li>
-        <li>세계적인 한글 디자이너 안상수 특별전과<br>그의 컬렉션 굿즈를 판매하고 있습니다.</li>
+        <li>전시, 공연, 프로그램을 합리적인 가격과<br>최고의 퀄리티로 만나볼 수 있는 <br>저희 헤움아라는 이번에는 특별히</li>
+        <li>세계적인 한글 디자이너 안상수 특별전과<br>그의 컬렉션 굿즈를 판매하고 있습니다.<br>놓치지 마세요^^</li>
       </ul>
 
       <div id="br"></div>
@@ -260,19 +290,22 @@
       <div id="c"><a href=""><img src="images/main/븐홍배1.jpg" alt="" class="fade"></a></div>
       <div id="d"><a href=""><img src="images/main/노란책1.jpg" alt="" class="fade"></a></div>
       <div id="loader">
-          <div id="box"></div>
+        <div id="box"></div>
       </div>
     </section>
 
     <!-- 푸터 -->
     <div class="section fp-auto-height">
       <footer id="footer">
-        <div class="address">
-          <address>헤움아라 예술관 | (06615) 서울 서초구 강남대로 405 통영빌딩</address>
-          <p>Copyrights &copy;2019 HeumAra. All rights reserved.</p>
+        <div class="footer_logo p_a">
+          <a href="index.html"><img src="images/common/logo.png" alt="헤움아라 로고"></a>
+          <div class="f_r">
+            <address>헤움아라 예술관 | (06615) 서울 서초구 강남대로 405 통영빌딩</address>
+            <p>Copyrights &copy; 2019 HeumAra. All rights reserved.</p>
+          </div>
         </div>
-        <div class="footer_link">
-          <p>개인정보처리방침</p>
+        <div class="footer_link p_a">
+          <p><a href="">개인정보처리방침</a></p>
           <ul>
             <li class="f_l"><a href="">이용약관</a></li>
             <li class="f_l"><a href="">법적고지</a></li>

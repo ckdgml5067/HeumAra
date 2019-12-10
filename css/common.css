@@ -85,13 +85,13 @@ body{font-family: s-core;font-weight: 300;font-size:16px;color: #666;letter-spac
 
 
 /* footer */
-#footer{position: relative;width: 100%;border-top: 1px solid #aaa;margin: 0 auto;padding: 180px 0 170px 0;font-size: 15px;color: #ED9C63;letter-spacing: 2.7px;background: #2e332d;}
-#footer .address{position: absolute;top: 180px;left: 260px;background: url("../images/logo.png") no-repeat;height: 50px;}
-#footer .address{font-weight: 300;}
-#footer .address address{padding-left: 260px;}
-#footer .address p{padding: 20px 0 0 260px;}
-#footer .footer_link{position: relative;font-weight: 300;}
-#footer .footer_link p{position: absolute;top: 0;right: 260px;font-weight: 500;}
-#footer .footer_link ul{position: absolute;top: 45px;right: 260px;}
-#footer .footer_link li:first-child{padding-right: 20px;border-right: 2px solid #ED9C63;}
-#footer .footer_link li:last-child{padding-left: 20px;}
+#footer{position: relative;width: 100%;height: 150px;border-top: 1px solid #aaa;margin: 0 auto;padding-bottom: 80px;color: #ED9C63;letter-spacing: 3px;font-size: 15px;background: #2e332d;}
+.footer_logo{left: 250px;top: 100px;width: 925px;height: 70px;vertical-align: middle;}
+.footer_logo a{width: 175px;height: 50px;}
+.footer_logo div{width: 665px;}
+.footer_logo div p{padding-top: 15px;}
+.footer_link{right: 250px;top: 100px;text-align: right;}
+.footer_link p a{font-weight: 500;}
+.footer_link ul{padding-top: 15px;}
+.footer_link ul li:first-child{padding-right: 20px;border-right: 2px solid #ED9C63;}
+.footer_link ul li:last-child{padding-left: 20px;}

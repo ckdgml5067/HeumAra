@@ -11,24 +11,22 @@
 
 /* 2페이지 문화 */
 #cnt2{width: 100%;height: 930px;min-width: 1400px;max-width: 1920px;margin: 0 auto;}
-#cnt2:before{content: "";display: block;width: 530px;height: 736px;position: absolute;top: 0;left: 660px;background: #eb9c68;}
+#cnt2:before{content: "";display: block;width: 530px;height: 736px;position: absolute;top: 0;left: 660px;background: rgba(235, 157, 104, 0.8);}
 #cnt2 .sub_tit{width: 790px;text-align: right;z-index: 100;top: 0;left: 0;letter-spacing: 7px;}
 #cnt2 .sub_tit h2{font-size: 65px;color: #2f332d;top: 190px;right: 0;font-weight: 400;}
 #cnt2 .sub_tit strong{font-size: 35px;color:#686868;top: 135px;right: 0;font-weight: 400;}
 
 #cnt2 .txt{bottom: 0;left: 250px;width: 250px;z-index: 100;line-height: 2;color: #686868;}
-#cnt2 .txt a{text-decoration: underline;}
 #cnt2 .txt a:hover, #cnt2 .txt a:focus{font-weight: 500;color: #eb9c68;}
 #cnt2 .txt .link_arrow{}
 #cnt2 #btn{width: 250px;font-size: 25px;margin-bottom: 200px;margin-top: 30px;}
-#cnt2 #btn li button{position: relative;z-index: 300;letter-spacing: 5px;line-height: 1.7;font-weight: 300;color: #eb9c68;}
-#cnt2 #btn li button:hover, #cnt2 #btn li button:focus, #cnt2 #btn li button.on{font-weight: 400;color: #686868;}
+#cnt2 #btn li button{position: relative;z-index: 300;letter-spacing: 5px;line-height: 1.7;font-weight: 300;color: #eb9c68;outline: none;}
+#cnt2 #btn li button:hover, #cnt2 #btn li button:focus, #cnt2 #btn li.on button{font-weight: 400;color: #686868;}
 #cnt2 #btn .btn1 span:before{content: "";position: absolute;width: 200px;height: 18px;background: rgba(245, 196, 82, 0.6);left: -4px;top: 18px;z-index: -3;}
 #cnt2 #btn .btn2 span:before{content: "";position: absolute;width: 260px;height: 18px;background: rgba(245, 196, 82, 0.6);left: -4px;top: 18px;z-index: -3;}
 #cnt2 #btn .btn3 span:before{content: "";position: absolute;width: 120px;height: 18px;background: rgba(245, 196, 82, 0.6);left: -4px;top: 18px;z-index: -3;}
-#cnt2 #btn .btn1:hover span:before{background: rgba(235, 157, 104, 0.6);}
-#cnt2 #btn .btn2:hover span:before{background: rgba(235, 157, 104, 0.6);}
-#cnt2 #btn .btn3:hover span:before{background: rgba(235, 157, 104, 0.6);}
+#cnt2 #btn li button:hover span:before, #cnt2 #btn li button:focus span:before, #cnt2 #btn li.on button span:before{background: rgba(235, 157, 104, 0.6);}
+
 
 #cnt2 #photo{width: 940px;height: 100%;right: 250px;top: 0;}
 #cnt2 #photo img:nth-child(2){top: 0;right: 0;}
@@ -73,33 +71,36 @@
 #cnt4 #c{position: absolute;left: 758px;top: 297px;}
 #cnt4 #d{position: absolute;left: 124px;bottom: 0;}
 
-#a > a > img ,#b> a> img,#c> a> img,#d> a> img{transition: transform 5s;opacity: 0.9;}
+#cnt4 #a > a > img ,#cnt4 #b> a> img,#cnt4 #c> a> img,#cnt4 #d> a> img{transition: transform 5s;opacity: 0.9;}
 
 #cnt4 #a a:hover img, #cnt4 #b a:hover img, #cnt4 #c a:hover img, #d a:hover img{transform: scale(1.3);opacity: 1;}
 
 #cnt4 #b div{background: #000; width: 500px;height: 800px;}
 
-#cnt4 h2{position: absolute;left: 370px;top: 110px;font-size: 52px;height: 52px;width: 536px;text-align: center left;line-height: 52px;letter-spacing: 14.3px;}
+#cnt4 h2{position: absolute;left: 370px;top: 110px;font-size: 64px;height: 64px;width: 536px;text-align: center left;line-height: 64px;font-weight: 400;letter-spacing: 9.6px;color: #000;}
 
 #cnt4 strong{position: absolute;left: 370px;top: 61px;font-size: 28px;height: 28px;width: 174px;text-align: center left;line-height: 28px;letter-spacing: 8px;}
 
 /*  */
-#cnt4 #subtit{position: absolute;left: 789px;top: 722px;font-size: 20px;height: 20px;width: 135px;text-align: center left;line-height: 20px;letter-spacing: 0.5px;}
+#cnt4 h2{position: absolute;left: 370px;top: 110px;font-size: 64px;height: 64px;width: 100%;text-align: center left;line-height: 64px;font-weight: 400;letter-spacing: 9.6px;color: #000;}
 
-#txtbox{position: absolute;left: 789px;top: 763px;font-size: 18px;height: 73px;width: 470px;text-align: center left;line-height: 24px;letter-spacing: 0.5px;height: 73px;overflow: hidden;}
+#cnt4 #subtit{position: absolute;left: 789px;top: 722px;font-size: 20px;height: 20px;width: 100%;text-align: center left;line-height: 20px;letter-spacing: 5px;font-weight: 400}
 
-#txtbox li{margin-bottom: 50px;}
+#cnt4 #txtbox{position: absolute;left: 789px;top: 763px;font-size: 18px;height: 114px;width: 470px;text-align: center left;line-height: 30px;letter-spacing: 2px;overflow: hidden;}
 
-#txtbox li:nth-child(1){animation: txtmovie 10s linear infinite;}
+#cnt4 #txtbox li{margin-bottom: 50px;}
+
+#cnt4 #txtbox li:nth-child(1){animation: txtmovie 10s linear infinite;}
+
 @keyframes txtmovie{
-        0%{margin-top: 100px;}
+        0%{margin-top: 0px;}
         5%{margin-top: 0;}
         30%{margin-top: 0;}
-        35%{margin-top: -100px;}
-        60%{margin-top: -100px;}
-        65%{margin-top: -210px;}
-        90%{margin-top: -210px;}
-        100%{margin-top: -210px;}}
+        35%{margin-top: -114px;}
+        60%{margin-top: -114px;}
+        65%{margin-top: -256px;}
+        90%{margin-top: -256px;}
+        100%{margin-top: 0px;}}
 /* 움직이는 네모 */
 #loader {position: absolute;top: 583px;left: 755px;margin-top: -2.7em;margin-left: -2.7em;width: 5.4em;
 height: 5.4em;}
