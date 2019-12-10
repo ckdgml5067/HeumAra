@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+  font-family: s-core;
+  src: url("../fonts/SCDream2.eot");
+  src: local("※"),
+  url("../fonts/SCDream2.woff")format("woff"),
+  url("../fonts/SCDream2.otf")format("opentype"),
+  url("../fonts/SCDream2.ttf")format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: s-core;
+  src: url("../fonts/SCDream3.eot");
+  src: local("※"),
+  url("../fonts/SCDream3.woff")format("woff"),
+  url("../fonts/SCDream3.otf")format("opentype"),
+  url("../fonts/SCDream3.ttf")format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: s-core;
+  src: url("../fonts/SCDream4.eot");
+  src: local("※"),
+  url("../fonts/SCDream4.woff")format("woff"),
+  url("../fonts/SCDream4.otf")format("opentype"),
+  url("../fonts/SCDream4.ttf")format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: s-core;
+  src: url("../fonts/SCDream5.eot");
+  src: local("※"),
+  url("../fonts/SCDream5.woff")format("woff"),
+  url("../fonts/SCDream5.otf")format("opentype"),
+  url("../fonts/SCDream5.ttf")format("truetype");
+  font-weight: 500;
+}
+
+/* tag reset */
+body, h1, h2, h3, h4, h5, h6, ul, p{margin: 0;padding: 0;}
+h1, h2, h3, h4, h5, h6{font-size: inherit;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{color: inherit;text-decoration: none;}
+img{border: none;vertical-align: top;}
+button{border: none;background: none;font-size: inherit;font-family: inherit;color: inherit;cursor: pointer;}
+address{font-style: normal;}
+header, nav, section, footer, span{display: block;}
+
+/* common class */
+.f_l{float: left;}
+.f_r{float: right;}
+.p_r{position: relative;}
+.p_a{position: absolute;}
+.clearfix:after{content: "";display: block;clear: both;}
+.blind{position: absolute;top: 0;left: -9999px;text-indent: -9999px;}
+
+/* skip navigation  */
+#skip a{position: absolute;top: 0;left: -9999px;z-index: 9999;}
+#skip a:focus{left: 0;width: 100%;height: 50px;line-height: 50px;text-align: center;background: #ffb400;color: #333;font-weight: 600;}
+
+body{font-family: s-core;font-weight: 300;font-size:16px;color: #666;letter-spacing: 5px;}
+
+/* header */
+.headerwrap{position:fixed;top:0;left:0;width:100%;min-width:1910px;overflow: hidden;z-index:8888;transition:top 0.6s;}
+.headerwrap.hide{top:-80px;}
+#header{font-weight: 300;top: 0;left: 0;width: 100%;height: 76px;background: #2e332d;}
+.logo {padding: 0px 71px;}
+.logo a{position: relative;display: block;margin-top:13px;}
+.logo a svg{width: 173px;height: 48px;}
+
+.log {text-align: center;height: 16px;}
+.log > ul > li{position: relative;display: inline-block;font-size: 16px ;color: #ffb400;height: 16px;line-height: 16px;}
+.log > ul > li + li{margin-left: 16px;padding-right: 87px;}
+.log li a{display: block;margin-top:20px;height: 16px;}
+.log  li .ENG{border-left: 1px solid #ffb400;padding-left: 16px;}
+
+/* #gnb */
+#gnb{text-align: center;}
+#gnb > ul> li{position: relative;display: inline-block;color: #fff;line-height: 76px}
+#gnb >ul>li+li{margin-left: 110px;}
+#gnb li a{display: block;}
+#gnb > ul> li > a{height: 67px;line-height: 76px;font-size: 18px;}
+#gnb > ul> li:hover > a, #gnb >ul> li > a:focus, #gnb >ul> li.on > a{color:#ffb400;}
+#gnb ul li a:hover, #gnb ul li a:focus{color:#ffb400; font-weight: 400;}
+
+
+/* footer */
+#footer{position: relative;width: 100%;border-top: 1px solid #aaa;margin: 0 auto;padding: 180px 0 170px 0;font-size: 15px;color: #ED9C63;letter-spacing: 2.7px;background: #2e332d;}
+#footer .address{position: absolute;top: 180px;left: 260px;background: url("../images/logo.png") no-repeat;height: 50px;}
+#footer .address{font-weight: 300;}
+#footer .address address{padding-left: 260px;}
+#footer .address p{padding: 20px 0 0 260px;}
+#footer .footer_link{position: relative;font-weight: 300;}
+#footer .footer_link p{position: absolute;top: 0;right: 260px;font-weight: 500;}
+#footer .footer_link ul{position: absolute;top: 45px;right: 260px;}
+#footer .footer_link li:first-child{padding-right: 20px;border-right: 2px solid #ED9C63;}
+#footer .footer_link li:last-child{padding-left: 20px;}
