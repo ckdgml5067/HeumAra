@@ -6,13 +6,13 @@
 .simple-slider .slider-container {position: relative;overflow: hidden;}
 .simple-slider .slider-container .slider-inner {white-space: nowrap;overflow-x: scroll;overflow-y: hidden;}
 .simple-slider .slider-container .slider-inner .slider-slide {position: relative;display: inline-block;width: 100%;margin-right: -4px;}
-.simple-slider .slider-previous, .simple-slider .slider-next {position: absolute;transform: translateY(-50%);bottom: 200px;display: block;width: 30px;height: 30px;line-height: 40px;text-align: center;text-decoration: none;color: #000;background-color: #FFF;border: 1px solid #CCC;transition: background-color 0.1s ease;border-radius: 50%;}
+.simple-slider .slider-previous, .simple-slider .slider-next {position: absolute;transform: translateY(-50%);bottom: 200px;display: block;width: 30px;height: 30px;line-height: 40px;text-align: center;text-decoration: none;color: #000;background-color: #66cccc;border: 1px solid #CCC;transition: background-color 0.1s ease;border-radius: 50%;}
 .simple-slider .slider-previous:hover, .simple-slider .slider-next:hover {
-background-color: #EEE;}
+background-color: #ff9966;}
 .simple-slider .slider-previous:active, .simple-slider .slider-next:active{ background-color: rgba(0, 0, 0, 0.4);}
 .simple-slider .slider-previous {left: 50px;font-size:50px;text-align: center;}
 .simple-slider .slider-next {right: 50px;font-size:50px;text-align: center;}
-
+ 
 /*#cnt1 Slider CSS */
 #cnt1 .slider-slide:nth-child(1) {background: url("../images/event/1slider/slider1-1.jpg");}
 #cnt1 .slider-slide:nth-child(2) {background: url("../images/event/1slider/slider1-2.jpg");}
